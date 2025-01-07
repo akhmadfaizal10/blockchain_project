@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Hubungkan ke node Ethereum (gunakan Infura atau node lokal)
 w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))
-
+print(w3)
 # Mengecek apakah Ethereum node terhubung
 if w3.is_connected():
     print("Connected to Ethereum network")
